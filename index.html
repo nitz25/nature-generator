@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nature's Generator</title>
+  </head>
+  <body>
+    <a href="javascript:void(0)" id="fb-link">Nature's Generator Reviews</a>
+    <script>
+      function openFB() {
+        if (navigator.userAgent.match("CriOS")) {
+          window.open("fb://page/naturesgenerator");
+        } else {
+          window.location = "fb://page/naturesgenerator";
+        }
+        setTimeout(function () {
+          window.location = "https://www.facebook.com/naturesgenerator/reviews";
+        }, 300);
+      }
+      window.onload = function () {
+        document.getElementById("fb-link").click();
+      };
+    </script>
+  </body>
+</html>
