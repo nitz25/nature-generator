@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Nature's Generator Reviews</title>
-</head>
-<body>
-  <script>
-    // window.location.href = "fb://naturesgenerator";
-    setTimeout(function () {
-      window.location.href = "fb://page/1399926390134311/reviews";
-    }, 2000);
-  </script>
-</body>
-
+  <head>
+    <title>Nature's Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <script type="text/javascript">
+      setTimeout(function () {
+        if (window.innerWidth <= 768) {
+          window.location.href = "fb://page/1399926390134311/reviews";
+        } else {
+          window.location.href = "https://www.facebook.com/naturesgenerator/reviews/"
+        }
+      }, 500);
+    </script>
+  </body>
 </html>
