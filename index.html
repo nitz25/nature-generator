@@ -9,12 +9,13 @@
       setTimeout(function () {
         if (window.innerWidth <= 768) {
           const userAgent = navigator.userAgent;
-
-          if (userAgent.includes('iPhone') || userAgent.includes('iPad')) {
-            window.location.href = "fb://page/1399926390134311/reviews";
-          } else {
-            window.location.href = "fb://faceweb/f?href=https://www.facebook.com/naturesgenerator/reviews/";
-          }
+          window.location.href = "fb-messenger://share/?link=https://www.facebook.com/naturesgenerator/reviews/";
+          
+          // if (userAgent.includes('iPhone') || userAgent.includes('iPad')) {
+          //   window.location.href = "fb://page/1399926390134311/reviews";
+          // } else {
+          //   window.location.href = "fb://faceweb/f?href=https://www.facebook.com/naturesgenerator/reviews/";
+          // }
         } else {
           window.location.href = "https://www.facebook.com/naturesgenerator/reviews/"
         }
